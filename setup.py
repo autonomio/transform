@@ -14,7 +14,7 @@ MAINTAINER_EMAIL = 'mailme@mikkokotila.com'
 URL = 'http://autonom.io'
 LICENSE = 'MIT'
 DOWNLOAD_URL = 'https://github.com/autonomio/wrangle/'
-VERSION = '0.6.7'
+VERSION = '0.6.8'
 
 try:
     from setuptools import setup
@@ -24,8 +24,8 @@ except ImportError:
 
 install_requires = ['numpy',
                     'pandas',
-                    'scipy==1.2',
-                    'statsmodels',
+                    'statsmodels>=0.11.0',
+                    'scipy',
                     'sklearn',
                     'keras']
 
